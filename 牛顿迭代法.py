@@ -24,7 +24,7 @@ def diedai(result):#定义迭代功能函数，实现代码复用
     worksheet.write(i, 2, cishu)
     i += 1
     if (float(n) >= float(value)-panduan) and ((float(n) <= float(value)+panduan)):#判断是否在置信区间内
-        worksheet.write(i, 0, '迭代次数为：{0}，x的值为{1}'.format(i, float(n)))
+        worksheet.write(i, 0, '迭代次数为：{0}，x的值为{1}'.format(cishu, float(n)))
         i += 1
         return 0
     else:
